@@ -1,8 +1,8 @@
 package main
 
 import (
-	"engine"
-	_ "plugin-postgresql"
+	"github.com/sqleyes/engine"
+	_ "github.com/sqleyes/plugin-postgresql"
 )
 
 func main() {
