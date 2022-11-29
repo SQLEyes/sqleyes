@@ -1,3 +1,6 @@
 postgresql:
   Device: "\\Device\\NPF_{8AAAA995-A1E9-4493-B984-2E6D03F06143}"
   BPFFilter: "tcp and port 5432"
+# 调试本地cap文件开启如下注释即可
+#  DEBUG: "true"
+#  Device: "./pgcap2.pcapng"
