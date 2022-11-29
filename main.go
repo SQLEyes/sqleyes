@@ -1,4 +1,3 @@
-//go:generate rsrc -ico main.ico -manifest goversioninfo.exe.manifest -o main.syso
 package main
 
 import (
@@ -7,5 +6,5 @@ import (
 )
 
 func main() {
-	engine.Run()
+	engine.Run("./config.yaml")
 }
