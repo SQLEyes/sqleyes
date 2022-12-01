@@ -19,8 +19,13 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v3
       with:
-        go-version: 1.18
-
+        go-version: 1.19
+    - name: engine
+      run: 	go get github.com/sqleyes/engine
+    - name: pgsql
+      run:  go get github.com/sqleyes/plugin-postgresql
+    - name: mysql
+      run:  go get github.com/sqleyes/plugin-mysql
     - name: Build
       run: go build -v ./...
 
