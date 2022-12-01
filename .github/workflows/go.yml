@@ -21,7 +21,7 @@ jobs:
       with:
         go-version: 1.19
     - name: pcap
-      run: apt-get install libpcap-dev
+      run: sudo apt-get install libpcap-dev
     - name: engine
       run: 	go get github.com/sqleyes/engine
     - name: pgsql
